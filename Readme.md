@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Polina Katysheva](https://up.htmlacademy.ru/adaptive/9/user/262423).
-* Наставник: `Дмитрий Походня`.
+* Наставник: [Дмитрий Походня](https://htmlacademy.ru/profile/id166319).
 
 ---
 
