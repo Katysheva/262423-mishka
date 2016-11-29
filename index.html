@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка. Главная</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
@@ -19,8 +20,8 @@
   </header>
 
   <main class="main-content">
-    <header class="page-title page-title--main-page">
-      <h1>Милые штуки ручной работы для дома</h1>
+    <header>
+      <h1 class="page-title page-title--main-page">Милые штуки ручной работы для дома</h1>
       <ul class="category-list">
         <li class="category-list__item"><a href="#">Предметы интерьера<img src="http://placehold.it/40x60" alt="Catalog item"></a></li>
         <li class="category-list__item"><a href="#">Детские игрушки<img src="http://placehold.it/40x60" alt="Catalog item"></a></li>
@@ -29,7 +30,7 @@
 
     <section class="product product--week">
       <h2 class="product__title">Вязаные корзиночки</h2>
-      <h3>Товар недели</h3>
+      <h4>Товар недели</h4>
       <p class="product__description">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
       </p>
@@ -72,8 +73,8 @@
       </section>
 
       <div class="reviews__arrows">
-        <button type="button" title="Previous review"><img src="http://placehold.it/130x50" alt="Prev"></button>
-        <button type="button" title="Next review"><img src="http://placehold.it/130x50" alt="Next"></button>
+        <button type="button" title="Previous review"><img src="http://placehold.it/110x50" alt="Prev"></button>
+        <button type="button" title="Next review"><img src="http://placehold.it/110x50" alt="Next"></button>
       </div>
 
       <a href="#" class="button" title="Write review">Написать</a>
@@ -88,7 +89,9 @@
       <div class="contacts__map">
         <img src="http://placehold.it/320x450" alt="map">
       </div>
-      <a href="#" class="button contacts__btn" title="Write to us">Напишите нам</a>
+      <footer class="contacts__footer">
+        <a href="#" class="button" title="Write to us">Напишите нам</a>
+      </footer>
     </section>
   </main>
 
