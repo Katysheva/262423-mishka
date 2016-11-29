@@ -1,0 +1,3 @@
+@mixin block-padding($top-bottom: 35px, $left-right: 30px) {
+  padding: $top-bottom $left-right;
+}

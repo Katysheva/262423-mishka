@@ -1,0 +1,4 @@
+.footer {
+  @include block-padding();
+  background: $light-gray;
+}

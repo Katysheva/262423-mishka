@@ -1,0 +1,20 @@
+.button {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  color: $gray;
+  border: 2px solid $gray;
+  background-color: transparent;
+  padding: 15px;
+  width: 100%;
+  margin-top: 40px;
+  font-size: 17px;
+  font-family: $opensans-bold;
+  cursor: pointer;
+
+  &--accent {
+    background-color: $accent-color;
+    border-color: $accent-color;
+    color: $main-bg-color;
+  }
+}

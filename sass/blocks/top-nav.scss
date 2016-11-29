@@ -1,0 +1,8 @@
+.top-nav {
+
+}
+
+.top-nav__item {
+  @include block-padding($top-bottom: 30px);
+  font-family: $opensans-bold;
+}

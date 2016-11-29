@@ -1,0 +1,17 @@
+$green-lighter: #63d1bb;
+$green-darker: #56c3b2;
+.category-list{
+
+}
+.category-list__item{
+  padding: 20px 30px;
+  a {
+    color: $main-bg-color;
+  }
+  &:first-of-type{
+    background-color: $green-lighter;
+  }
+  &:last-of-type{
+    background-color: $green-darker;
+  }
+}

@@ -1,0 +1,12 @@
+.contacts {
+  @include block-padding(40px, 0);
+  h3 {
+    @include block-padding($top-bottom: 0);
+  }
+}
+.contacts__info {
+  @include block-padding($top-bottom: 0);
+}
+.contacts__footer {
+  @include block-padding($top-bottom: 0);
+}
