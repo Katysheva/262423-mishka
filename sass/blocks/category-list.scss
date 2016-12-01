@@ -1,17 +1,33 @@
-$green-lighter: #63d1bb;
-$green-darker: #56c3b2;
+
 .category-list{
 
 }
 .category-list__item{
-  padding: 20px 30px;
+
+}
+.category-list__item{
+  font-size: 19px;
+  font-family: $opensans-bold;
+
   a {
+    display: block;
+    padding: 20px 30px;
     color: $main-bg-color;
+
+    &:active {
+      color: rgba($main-bg-color, 0.3);
+    }
   }
   &:first-of-type{
     background-color: $green-lighter;
+    &:hover, &:focus, &:active {
+      background-color: #59d5bc;
+    }
   }
   &:last-of-type{
     background-color: $green-darker;
+    &:hover, &:focus, &:active {
+      background-color: #46c1ae;
+    }
   }
 }

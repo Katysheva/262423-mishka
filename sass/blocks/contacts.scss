@@ -6,6 +6,18 @@
 }
 .contacts__info {
   @include block-padding($top-bottom: 0);
+
+  a[href^=mailto] {
+    border-bottom: 1px solid $accent-color;
+    &:hover, &:focus {
+      color: $accent-color;
+      border-bottom-color: #46c1ae;
+    }
+    &:active {
+      color: rgba($accent-color, 0.3);
+      border-bottom-color: rgba(#46c1ae, 0.1);
+    }
+  }
 }
 .contacts__footer {
   @include block-padding($top-bottom: 0);

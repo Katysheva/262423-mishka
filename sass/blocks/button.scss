@@ -1,20 +1,43 @@
 .button {
+  // Проблема в том, что когда этот класс у ссылки,
+  // она не растягивается на 100%, так как не блочная,
+  // а кнопки, которые <button>, не растягиваются на всю ширину, если она не задана.
   display: block;
+  width: 100%;
+
   text-transform: uppercase;
   text-align: center;
   color: $gray;
   border: 2px solid $gray;
   background-color: transparent;
   padding: 15px;
-  width: 100%;
   margin-top: 40px;
   font-size: 17px;
   font-family: $opensans-bold;
   cursor: pointer;
 
+  &:hover, &:focus {
+    background-color: $gray;
+    color: $white;
+    outline: none;
+  }
+  &:active {
+    background-color: $gray;
+    color: rgba($white, 0.3);
+  }
+
   &--accent {
     background-color: $accent-color;
     border-color: $accent-color;
-    color: $main-bg-color;
+    color: $white;
+    width: 100%;
+    &:hover, &:focus {
+      border-color:  $green-darker;
+      background-color: $green-darker;
+      color: $white;
+    }
+    &:active {
+      color: rgba($white, 0.3);
+    }
   }
 }
