@@ -3,118 +3,124 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка. Главная</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header__logo"><img src="http://placehold.it/90x35" alt="Logo"></div>
-    <nav class="top-nav">
-      <button class="top-nav__toggle" type="button" title="Open menu"></button>
-      <ul class="top-nav__list">
-        <li class="top-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-        <li class="top-nav__item"><a href="form.html">Вязание на заказ</a></li>
-        <li class="top-nav__item"><a href="#" title="search">Поиск по сайту</a></li>
-        <li class="top-nav__item"><a href="#" title="cart">Корзина пока пуста</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="main-content">
-    <header class="page-title page-title--main-page">
-      <h1>Милые штуки ручной работы для дома</h1>
-      <ul class="category-list">
-        <li class="category-list__item"><a href="#">Предметы интерьера<img src="http://placehold.it/40x60" alt="Catalog item"></a></li>
-        <li class="category-list__item"><a href="#">Детские игрушки<img src="http://placehold.it/40x60" alt="Catalog item"></a></li>
-      </ul>
+  <div class="temp-container">
+    <header class="header">
+      <div class="header__logo"><img src="http://placehold.it/90x35" alt="Logo"></div>
+      <nav class="top-nav">
+        <button class="top-nav__toggle" type="button" title="Open menu"></button>
+        <ul class="top-nav__list">
+          <li class="top-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="top-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="top-nav__item"><a href="#" title="search">Поиск по сайту</a></li>
+          <li class="top-nav__item"><a href="#" title="cart">Корзина пока пуста</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section class="product product--week">
-      <h2 class="product__title">Вязаные корзиночки</h2>
-      <h3>Товар недели</h3>
-      <p class="product__description">
-        Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-      </p>
-      <dl class="product__characteristics">
-        <dt>Цвет:</dt>
-        <dd>"Тиффани"/серый</dd>
-        <dt>Диаметр:</dt>
-        <dd>25 см</dd>
-        <dt>Высота:</dt>
-        <dd>15 см</dd>
-      </dl>
-      <img src="http://placehold.it/260x315" alt="Product item (week)" class="product__image">
-      <p class="product__price">Цена: 990руб.</p>
-      <a href="#" class="button" title="Make an order">Заказать</a>
-    </section>
+    <main class="main-content">
+      <header>
+        <h1 class="page-title page-title--main-page">Милые штуки ручной работы для дома</h1>
+        <ul class="category-list">
+          <li class="category-list__item"><a href="#" class="category-list__link">Предметы интерьера<img src="http://placehold.it/40x60" alt="Catalog item"></a></li>
+          <li class="category-list__item"><a href="#" class="category-list__link">Детские игрушки<img src="http://placehold.it/40x60" alt="Catalog item"></a></li>
+        </ul>
+      </header>
 
-    <section class="about-us">
-      <h2>Коротко о нас:</h2>
-      <ul class="about-us__list">
-        <li class="about-us__item"><span id="svg-sprite-image-will-be-here"></span>Экологически чистые материалы</li>
-        <li class="about-us__item"><span id="svg-sprite-image-will-be-here"></span>Скандинавский стиль по российской цене</li>
-        <li class="about-us__item"><span id="svg-sprite-image-will-be-here"></span>Увеличивает лайки на фотографиях</li>
-        <li class="about-us__item"><span id="svg-sprite-image-will-be-here"></span>Связано вручную с любовью и умилением</li>
-        <li class="about-us__item"><span id="svg-sprite-image-will-be-here"></span>Поддержка отечественного производителя</li>
-        <li class="about-us__item"><span id="svg-sprite-image-will-be-here"></span>Поставляется в подарочной упаковке</li>
-      </ul>
-    </section>
-
-    <section class="reviews">
-      <h2>Отзывы</h2>
-
-      <section class="review reviews__item">
-        <p>
-          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+      <section class="product product--week">
+        <h2 class="product__title">Вязаные корзиночки</h2>
+        <h4>Товар недели</h4>
+        <p class="product__description">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
-        <footer class="review__footer">
-          <h3>Анастасия Красильникова</h3>
-          <p>@misssssiskras</p>
-        </footer>
+        <dl class="product__characteristics">
+          <dt>Цвет:</dt>
+          <dd>"Тиффани"/серый</dd>
+          <dt>Диаметр:</dt>
+          <dd>25 см</dd>
+          <dt>Высота:</dt>
+          <dd>15 см</dd>
+        </dl>
+        <img src="http://placehold.it/260x315" alt="Product item (week)" class="product__image">
+        <p class="product__price">Цена: 990руб.</p>
+        <a href="#" class="button" title="Make an order">Заказать</a>
       </section>
 
-      <div class="reviews__arrows">
-        <button type="button" title="Previous review"><img src="http://placehold.it/130x50" alt="Prev"></button>
-        <button type="button" title="Next review"><img src="http://placehold.it/130x50" alt="Next"></button>
-      </div>
+      <section class="about-us">
+        <h2>Коротко о нас:</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item"><span id="svg-sprite-image-will-be-here"></span>Экологически чистые материалы</li>
+          <li class="about-us__item"><span id="svg-sprite-image-will-be-here"></span>Скандинавский стиль по российской цене</li>
+          <li class="about-us__item"><span id="svg-sprite-image-will-be-here"></span>Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item"><span id="svg-sprite-image-will-be-here"></span>Связано вручную с любовью и умилением</li>
+          <li class="about-us__item"><span id="svg-sprite-image-will-be-here"></span>Поддержка отечественного производителя</li>
+          <li class="about-us__item"><span id="svg-sprite-image-will-be-here"></span>Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
 
-      <a href="#" class="button" title="Write review">Написать</a>
-    </section>
+      <section class="reviews">
+        <h2>Отзывы</h2>
 
-    <section class="contacts">
-      <h3>Контакты</h3>
-      <div class="contacts__info">
-        <p>email: <a href="mailto:nfo@mimimishkashop.ru">nfo@mimimishkashop.ru</a></p>
-        <div>адрес: <address>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address></div>
-      </div>
-      <div class="contacts__map">
-        <img src="http://placehold.it/320x450" alt="map">
-      </div>
-      <a href="#" class="button contacts__btn" title="Write to us">Напишите нам</a>
-    </section>
-  </main>
+        <section class="review reviews__item">
+          <p>
+            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+          </p>
+          <footer class="review__footer">
+            <h3>Анастасия Красильникова</h3>
+            <p>@misssssiskras</p>
+          </footer>
+        </section>
 
-  <footer class="footer">
-    <div class="social-links">
-      <ul class="social-links__list">
-        <li class="social-links__item"><a href="#" title="Instagram"></a></li>
-        <li class="social-links__item"><a href="#" title="Facebook"></a></li>
-        <li class="social-links__item"><a href="#" title="Twitter"></a></li>
-      </ul>
+        <div class="reviews__arrows">
+          <button type="button" title="Previous review"><img src="http://placehold.it/110x50" alt="Prev"></button>
+          <button type="button" title="Next review"><img src="http://placehold.it/110x50" alt="Next"></button>
+        </div>
+
+        <a href="#" class="button" title="Write review">Написать</a>
+      </section>
+
+      <section class="contacts">
+        <h3>Контакты</h3>
+        <div class="contacts__info">
+          <p>email: <a href="mailto:nfo@mimimishkashop.ru">nfo@mimimishkashop.ru</a></p>
+          <div>адрес: <address>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address></div>
+        </div>
+        <div class="contacts__map">
+          <img src="http://placehold.it/320x450" alt="map">
+        </div>
+        <footer class="contacts__footer">
+          <a href="#" class="button" title="Write to us">Напишите нам</a>
+        </footer>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="social-links">
+        <ul class="social-links__list">
+          <li class="social-links__item"><a href="#" title="Instagram"></a></li>
+          <li class="social-links__item"><a href="#" title="Facebook"></a></li>
+          <li class="social-links__item"><a href="#" title="Twitter"></a></li>
+        </ul>
+      </div>
+      <div class="copyright">Разработано
+        <a href="#" title="Developer" target="_blank"></a>
+      </div>
+    </footer>
+
+    <div id="modal-window" class="modal-window">
+      <h2>Добавить в корзину</h2>
+      <p>Выберите размер</p>
+      <input class="modal-window__input" type="radio" id="size-s" name="choosing-size">
+      <label class="modal-window__label" for="size-s"><span>S</span></label>
+      <input class="modal-window__input" type="radio" id="size-m" name="choosing-size">
+      <label class="modal-window__label" for="size-m"><span>M</span></label>
+      <input class="modal-window__input" type="radio" id="size-l" name="choosing-size">
+      <label class="modal-window__label" for="size-l"><span>L</span></label>
+      <button class="button button--accent" title="Add to cart">Добавить</button>
     </div>
-    <div class="copyright">Разработано
-      <a href="#" title="Developer" target="_blank"></a>
-    </div>
-  </footer>
 
-  <div id="modal-window" class="modal-window">
-    <h2>Добавить в корзину</h2>
-    <p>Выберите размер</p>
-    <input class="modal-window__input" type="checkbox" id="size-s" name="size-s">
-    <label class="modal-window__label" for="size-s">S</label>
-    <input class="modal-window__input" type="checkbox" id="size-m" name="size-m">
-    <label class="modal-window__label" for="size-m">M</label>
-    <input class="modal-window__input" type="checkbox" id="size-l" name="size-l">
-    <label class="modal-window__label" for="size-l">L</label>
-    <button class="button button--accent" title="Add to cart">Добавить</button>
   </div>
 </body>
 </html>

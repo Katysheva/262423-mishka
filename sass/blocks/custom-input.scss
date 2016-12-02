@@ -1,0 +1,27 @@
+.custom-input {
+  border: 0;
+  border-bottom: 2px solid $gray;
+  padding: 15px 0;
+  width: 100%;
+  color: $gray;
+  font-size: 17px;
+  font-family: $opensans;
+  &:focus {
+    border-bottom-color: $accent-color;
+  }
+  &::-webkit-input-placeholder {
+    color: rgba($gray, 0.3);
+  }
+
+  &--textarea {
+    @include inputs-border();
+    resize: none;
+    width: 100%;
+    min-height: 140px;
+    margin-top: 20px;
+    padding: 17px 20px;
+    &:focus{
+      outline: 2px solid $accent-color;
+    }
+  }
+}

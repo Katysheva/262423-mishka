@@ -1,0 +1,64 @@
+input[name="product-type"]{
+  &:not(checked) {
+    position: absolute;
+    opacity: 0;
+  }
+  &:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 40px;
+  }
+  &:not(checked) + .custom-radio:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    background: #FFF;
+  }
+  &:not(checked) + .custom-radio:after{
+    background-size: 10px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    background: $accent-color;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  &:checked + .custom-radio:after {
+    opacity: 1;
+  }
+  &:not(checked) + .custom-radio:hover:before,
+  &:not(checked) + .custom-radio:focus:before {
+    border-color: $accent-color;
+
+  }
+  &:not(checked) + .custom-radio:active:before {
+    border-color: rgba($gray, 0.3);
+  }
+}
+
+.custom-radio {
+  display: block;
+  margin-top: 30px;
+  &:before {
+    content: '';
+    width: 36px;
+    height: 36px;
+    @include inputs-border();
+    border-radius: 50%;
+  }
+  &:after{
+    content: '';
+  }
+  span {
+    display: block;
+    padding: 8px 0 8px 25px;
+  }
+  &:first-of-type {
+    span {
+      padding: 0 25px;
+    }
+  }
+}

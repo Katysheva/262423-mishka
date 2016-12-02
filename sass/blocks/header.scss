@@ -1,0 +1,9 @@
+.header {
+  @include block-padding($top-bottom: 0);
+}
+.header__logo {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}

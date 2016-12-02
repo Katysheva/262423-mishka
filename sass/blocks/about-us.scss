@@ -1,0 +1,5 @@
+.about-us {
+  @include block-padding();
+  font-size: 17px;
+  font-family: $opensans-bold;
+}

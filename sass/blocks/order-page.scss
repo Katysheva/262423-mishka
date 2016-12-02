@@ -1,0 +1,44 @@
+.order-page {
+  @include block-padding();
+
+  fieldset {
+    border: 0;
+    border-top: 1px solid $accent-color;
+    padding: 0 0 30px;
+    &:last-of-type {
+      padding: 0 0 20px;
+    }
+
+  }
+  legend {
+    color: $accent-color;
+    font-size: 17px;
+    font-family: $opensans-bold;
+    text-transform: uppercase;
+    padding-right: 20px;
+    padding-left: 0;
+  }
+
+  label {
+    font-size: 17px;
+    font-family: $opensans-bold;
+
+    &[for="phone"], &[for="email"], &[for="add-info"] {
+      display: none;
+    }
+  }
+
+  input[type=radio], input[type=checkbox] {
+    display: none;
+  }
+}
+
+.order-page__intro {
+  font-size: 13px;
+  line-height: 24px;
+}
+.order-page__req {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+}
