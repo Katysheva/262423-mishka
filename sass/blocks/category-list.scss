@@ -1,13 +1,10 @@
-
 .category-list{
-
 }
-.category-list__item{
 
-}
 .category-list__item{
   font-size: 19px;
   font-family: $opensans-bold;
+  flex-basis: 100%;
 
   a {
     display: block;
@@ -29,5 +26,16 @@
     &:hover, &:focus, &:active {
       background-color: #46c1ae;
     }
+  }
+}
+
+@media ($tablet-widths) {
+  .category-list {
+    @include container-fluid();
+    display: flex;
+  }
+  .category-list__item {
+    flex-basis: 50%;
+    font-size: 20px;
   }
 }

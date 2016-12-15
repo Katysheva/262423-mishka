@@ -1,9 +1,34 @@
 .header {
   @include block-padding($top-bottom: 0);
+  position: relative;
 }
 .header__logo {
   img {
     display: block;
     margin: 0 auto;
   }
+}
+.header__toggle-button {
+  background-image: url('../img/icon-menu-open.svg');
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 22px;
+  height: 17px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@media ($tablet-widths) {
+  .header__toggle-button {
+    display: none;
+  }
+}
+@media ($desktop-widths) {
 }

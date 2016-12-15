@@ -2,33 +2,17 @@
   @include block-padding();
   border: 1px solid #c6c6c6;
   text-align: center;
+  box-shadow: 0 5px 10px rgba(#000101, 0.25);
   p {
     font-size: 15px;
   }
-
+  h2 {
+    text-transform: uppercase;
+  }
 }
 
 .modal-window__input {
   display: none;
-  // &:not(checked) + .modal-window__label:before {
-  //   content: '';
-  //   display: block;
-  //   position: absolute;
-  //   left: 0;
-  //   background: #FFF;
-  // }
-  // &:not(checked) + .modal-window__label:after{
-  //   background-size: 10px;
-  //   position: absolute;
-  //   top: 12px;
-  //   left: 12px;
-  //   width: 16px;
-  //   height: 16px;
-  //   background: $accent-color;
-  //   border-color: rgba($gray, 0.1);
-  //   border-radius: 50%;
-  //   opacity: 0;
-  // }
   &:checked + .modal-window__label:before {
     opacity: 1;
     border-color: $accent-color;
@@ -67,5 +51,26 @@
     left: 36px;
     text-align: center;
     margin: 0 auto;
+  }
+}
+
+
+@media ($tablet-widths) {
+  .modal-window {
+    width: 85%;
+    margin: 0 auto;
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+  .modal-window {
+    width: 54%;
+    margin: 0 auto;
+    h2 {
+      font-size: 30px;
+    }
   }
 }

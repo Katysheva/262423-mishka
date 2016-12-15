@@ -1,9 +1,18 @@
 .contacts {
   @include block-padding(40px, 0);
+
+}
+.contacts__text-content {
+  position: relative;
   h3 {
     @include block-padding($top-bottom: 0);
+    &:after {
+      display: none;
+      content: '';
+    }
   }
 }
+
 .contacts__info {
   @include block-padding($top-bottom: 0);
 
@@ -21,4 +30,108 @@
 }
 .contacts__footer {
   @include block-padding($top-bottom: 0);
+}
+
+.contacts__map {
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media ($tablet-widths) {
+  .contacts {
+    @include block-padding(0, 0);
+
+  }
+
+  .contacts__text-content {
+    // @include container-middle();
+    padding: 70px 50px 65px;
+    position: relative;
+    h3 {
+      font-size: 43px;
+      line-height: 50px;
+      @include block-padding(0, 0);
+      &:after {
+        content: '';
+        display: block;
+        background-image: url('../img/icon-flag.svg');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        width: 50px;
+        height: 85px;
+      }
+    }
+  }
+  .contacts__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    p, div {
+      flex-basis: 50%;
+      margin-top: 0;
+    }
+  }
+
+  .contacts__footer {
+    a[title^='Write'] {
+      width: 34%;
+      margin: 55px auto;
+    }
+  }
+}
+
+
+
+@media ($desktop-widths) {
+  .contacts {
+    // @include container-fluid();
+    @include container-middle();
+    position: relative;
+    margin: 0 auto;
+    padding-top: 150px;
+    margin-bottom: 105px;
+  }
+  .contacts__text-content {
+    max-width: 35%;
+    padding: 0;
+    h3 {
+     font-size: 53px;
+     line-height: 57px;
+     &:after {
+      top: -10px;
+      right: auto;
+      left: -125px;
+    }
+  }
+}
+.contacts__info {
+  flex-direction: column;
+}
+
+.contacts__map {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  img {
+    display: block;
+    height: 100%;
+    width: auto;
+    margin: auto 0 auto auto;
+  }
+}
+.contacts__footer {
+  padding: 0;
+  a[title^='Write'] {
+    width: 34%;
+    margin: 85px 0 0;
+  }
+}
 }

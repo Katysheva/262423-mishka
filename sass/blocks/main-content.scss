@@ -1,0 +1,11 @@
+.main-content {
+}
+.main-content__header {
+  background-color: #f9f9f9;
+}
+@media ($tablet-widths) {
+  .main-content {
+    header {
+    }
+  }
+}

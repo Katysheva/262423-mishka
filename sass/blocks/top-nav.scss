@@ -1,8 +1,24 @@
 .top-nav {
-
+  display: none;
 }
 
 .top-nav__item {
   @include block-padding($top-bottom: 30px);
   font-family: $opensans-bold;
+}
+
+@media ($tablet-widths) {
+  .top-nav {
+    display: block;
+  }
+  .top-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .top-nav__left, .top-nav__right {
+    display: flex;
+  }
+}
+
+@media ($desktop-widths) {
 }

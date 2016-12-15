@@ -9,10 +9,10 @@ body{
 
 }
 
-.temp-container {
-  max-width: 320px;
-  margin: 0 auto;
-}
+// .temp-container {
+//   max-width: 320px;
+//   margin: 0 auto;
+// }
 
 h1,
 h2,
@@ -32,6 +32,14 @@ h1 {
 h2 {
   font-size: 25px;
   line-height: 30px;
+  @media ($tablet-widths) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media ($desktop-widths) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 h3 {
   font-size: 18px;
