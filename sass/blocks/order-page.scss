@@ -42,3 +42,24 @@
   line-height: 16px;
   margin: 0;
 }
+@media ($tablet-widths) {
+  .order-page {
+    @include container-fluid();
+    padding: 80px 0 50px;
+
+    fieldset {
+      border-top: 0;
+    }
+
+    .fieldset__content {
+      display: flex;
+    }
+
+    .fieldset {
+    }
+  }
+  .order-page__intro {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

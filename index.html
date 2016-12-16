@@ -8,7 +8,9 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__logo"><a href="#"><img src="http://placehold.it/90x35" alt="Logo"></a></div>
+    <div class="header__logo">
+      <a href="#"><img src="img/logo-mobile.svg" alt="Logo"></a>
+    </div>
     <button class="header__toggle-button" type="button" title="Open menu"></button>
     <nav class="top-nav">
       <div class="top-nav__list">
@@ -19,131 +21,130 @@
         <li class="top-nav__item">
           <a href="form.html">Вязание на заказ</a>
         </li>
-      </ul>
-      <ul class="top-nav__right">
+       </ul>
+       <ul class="top-nav__right">
         <li class="top-nav__item">
           <a href="#" title="search">Поиск по сайту</a>
         </li>
         <li class="top-nav__item">
           <a href="#" title="cart">Корзина пока пуста</a>
         </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<main class="main-content">
-
-  <header class="main-content__header">
-    <h1 class="page-title page-title--main-page">Милые штуки ручной работы для дома</h1>
-    <ul class="category-list">
-      <li class="category-list__item"><a href="#" class="category-list__link">Предметы интерьера<img src="http://placehold.it/40x60" alt="Catalog item"></a></li>
-      <li class="category-list__item"><a href="#" class="category-list__link">Детские игрушки<img src="http://placehold.it/40x60" alt="Catalog item"></a></li>
-    </ul>
+       </ul>
+      </div>
+    </nav>
   </header>
 
-  <section class="product">
-    <header class="product__title product__title--week">
-      <h2>Вязаные корзиночки</h2>
-      <h4>Товар <br>недели</h4>
+  <main class="main-content">
+    <header class="main-content__header main-content__header--main-page">
+      <h1 class="page-title page-title--main-page">Милые штуки ручной работы для дома</h1>
+      <ul class="category-list">
+        <li class="category-list__item"><a href="#" class="category-list__link">Предметы интерьера<img src="http://placehold.it/40x60" alt="Catalog item"></a></li>
+        <li class="category-list__item"><a href="#" class="category-list__link">Детские игрушки<img src="http://placehold.it/40x60" alt="Catalog item"></a></li>
+      </ul>
     </header>
-    <div class="product__description">
-      <div class="product__about">
-        Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
 
-        <table class="product__characteristics">
-          <tr>
-            <td>Цвет:</td>
-            <td>"Тиффани"/серый</td>
-          </tr>
-          <tr>
-            <td>Диаметр:</td>
-            <td>25 см</td>
-          </tr>
-          <tr>
-            <td>Высота:</td>
-            <td>15 см</td>
-          </tr>
-        </table>
-      </div>
-      <img src="img/triple-set-mobile@1x.jpg" class="product__image" alt="Product item (week)">
+    <section class="product">
+      <header class="product__title product__title--week">
+        <h2>Вязаные корзиночки</h2>
+        <h4>Товар <br>недели</h4>
+      </header>
+      <div class="product__description">
+        <div class="product__about">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
 
-      <footer class="product__footer">
-        <p class="product__price">Цена: 990руб.</p>
-        <a href="#" class="button" title="Make an order">Заказать</a>
-      </footer>
-    </div>
-  </section>
+          <table class="product__characteristics">
+            <tr>
+              <td>Цвет:</td>
+              <td>"Тиффани"/серый</td>
+            </tr>
+            <tr>
+              <td>Диаметр:</td>
+              <td>25 см</td>
+            </tr>
+            <tr>
+              <td>Высота:</td>
+              <td>15 см</td>
+            </tr>
+          </table>
+        </div>
+        <img src="img/triple-set-mobile@1x.jpg" class="product__image" alt="Product item (week)">
 
-  <section class="about-us">
-    <h2>Коротко о нас:</h2>
-    <ul class="about-us__list">
-      <li class="about-us__item">
-        <img src="img/icon-feature-1.svg" alt="" class="about-us__img" width="33" height="38">
-        Экологически чистые материалы
-      </li>
-      <li class="about-us__item">
-        <img src="img/icon-feature-3.svg" alt="" class="about-us__img" width="46" height="27">
-        Скандинавский стиль по российской цене
-      </li>
-      <li class="about-us__item">
-        <img src="img/icon-feature-5.svg" alt="" class="about-us__img" width="35" height="27">
-        Увеличивает лайки на фотографиях
-      </li>
-      <li class="about-us__item">
-        <img src="img/icon-feature-2.svg" alt="" class="about-us__img" width="35" height="35">
-        Связано вручную с любовью и умилением
-      </li>
-      <li class="about-us__item">
-        <img src="img/icon-feature-4.svg" alt="" class="about-us__img" width="56" height="24">
-        Поддержка отечественного производителя
-      </li>
-      <li class="about-us__item">
-        <img src="img/icon-feature-6.svg" alt="" class="about-us__img" width="33" height="33">
-        Поставляется в подарочной упаковке
-      </li>
-    </ul>
-  </section>
-
-  <section class="reviews">
-    <div class="reviews__content">
-      <h2>Отзывы</h2>
-
-      <section class="review reviews__item">
-        <p>
-          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-        </p>
-        <footer class="review__footer">
-          <h3>Анастасия Красильникова</h3>
-          <p>@misssssiskras</p>
+        <footer class="product__footer">
+          <p class="product__price">Цена: 990руб.</p>
+          <a href="#" class="button" title="Make an order">Заказать</a>
         </footer>
-      </section>
-
-      <div class="reviews__arrows">
-        <button type="button" class="reviews__prev" title="Previous review"></button>
-        <button type="button" class="reviews__next" title="Next review"></button>
       </div>
+    </section>
 
-      <a href="#" class="button reviews__button" title="Write review">Написать</a>
-    </div>
-  </section>
+    <section class="about-us">
+      <h2>Коротко о нас:</h2>
+      <ul class="about-us__list">
+        <li class="about-us__item">
+          <img src="img/icon-feature-1.svg" alt="" class="about-us__img" width="33" height="38">
+          Экологически чистые материалы
+        </li>
+        <li class="about-us__item">
+          <img src="img/icon-feature-3.svg" alt="" class="about-us__img" width="46" height="27">
+          Скандинавский стиль по российской цене
+        </li>
+        <li class="about-us__item">
+          <img src="img/icon-feature-5.svg" alt="" class="about-us__img" width="35" height="27">
+          Увеличивает лайки на фотографиях
+        </li>
+        <li class="about-us__item">
+          <img src="img/icon-feature-2.svg" alt="" class="about-us__img" width="35" height="35">
+          Связано вручную с любовью и умилением
+        </li>
+        <li class="about-us__item">
+          <img src="img/icon-feature-4.svg" alt="" class="about-us__img" width="56" height="24">
+          Поддержка отечественного производителя
+        </li>
+        <li class="about-us__item">
+          <img src="img/icon-feature-6.svg" alt="" class="about-us__img" width="33" height="33">
+          Поставляется в подарочной упаковке
+        </li>
+      </ul>
+    </section>
 
-  <section class="contacts">
-    <div class="contacts__text-content">
-      <h3>Контакты</h3>
-      <div class="contacts__info">
-        <p>email: <a href="mailto:nfo@mimimishkashop.ru">nfo@mimimishkashop.ru</a></p>
-        <div>адрес: <address>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address></div>
+    <section class="reviews">
+      <div class="reviews__content">
+        <h2>Отзывы</h2>
+
+        <section class="review reviews__item">
+          <p>
+            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+          </p>
+          <footer class="review__footer">
+            <h3>Анастасия Красильникова</h3>
+            <p>@misssssiskras</p>
+          </footer>
+        </section>
+
+        <div class="reviews__arrows">
+          <button type="button" class="reviews__prev" title="Previous review"></button>
+          <button type="button" class="reviews__next" title="Next review"></button>
+        </div>
+
+        <a href="#" class="button reviews__button" title="Write review">Написать</a>
       </div>
-    </div>
-    <div class="contacts__map">
-      <img src="img/map-mobile@1x.jpg" alt="map">
-    </div>
-    <footer class="contacts__footer">
-      <a href="#" class="button" title="Write to us">Напишите нам</a>
-    </footer>
-  </section>
-</main>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__text-content">
+        <h3>Контакты</h3>
+        <div class="contacts__info">
+          <p>email: <a href="mailto:nfo@mimimishkashop.ru">nfo@mimimishkashop.ru</a></p>
+          <div>адрес: <address>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address></div>
+        </div>
+      </div>
+      <div class="contacts__map">
+        <img src="img/map-mobile@1x.jpg" alt="map">
+      </div>
+      <footer class="contacts__footer">
+        <a href="#" class="button" title="Write to us">Напишите нам</a>
+      </footer>
+    </section>
+  </main>
 
 <footer class="footer">
   <div class="social-links">

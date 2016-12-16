@@ -1,7 +1,11 @@
 .main-content {
 }
 .main-content__header {
-  background-color: #f9f9f9;
+  background-color: #f1f1f1;
+  &--main-page {
+    background-color: #f9f9f9;
+  }
+
 }
 @media ($tablet-widths) {
   .main-content {

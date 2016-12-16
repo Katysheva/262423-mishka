@@ -18,7 +18,10 @@
     font-size: 43px;
     line-height: 50px;
     background-size: cover;
+    padding: 105px 80px;
+    &--main-page {
       min-height: 625px;
+    }
   }
 }
 @media ($desktop-widths) {
@@ -26,5 +29,6 @@
     font-size: 53px;
     line-height: 57px;
     background-size: contain;
+    padding: 105px 100px;
   }
 }
