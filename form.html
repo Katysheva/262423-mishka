@@ -7,41 +7,41 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- <header class="header">
-  <div class="header__logo"><a href="#"><img src="img/logo-mobile.svg" alt="Logo"></a></div>
-  <button class="header__toggle-button" type="button" title="Open menu"></button>
-  <nav class="top-nav">
-    <div class="top-nav__list">
-     <ul class="top-nav__left">
-      <li class="top-nav__item">
-        <a href="catalog.html">Каталог товаров</a>
-      </li>
-      <li class="top-nav__item">
-        <a href="form.html">Вязание на заказ</a>
-      </li>
-    </ul>
-    <ul class="top-nav__right">
-      <li class="top-nav__item">
-        <a href="#" title="search">Поиск по сайту</a>
-      </li>
-      <li class="top-nav__item">
-        <a href="#" title="cart">Корзина пока пуста</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-</header>
-
-<main class="main-content">
-  <header class="main-content__header">
-    <h1 class="page-title">Вязание на заказ</h1>
+  <header class="header">
+    <div class="header__logo"><a href="#"><img src="http://placehold.it/90x35" alt="Logo"></a></div>
+    <button class="header__toggle-button" type="button" title="Open menu"></button>
+    <nav class="top-nav">
+      <div class="top-nav__list">
+        <ul class="top-nav__left">
+          <li class="top-nav__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="top-nav__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="top-nav__right">
+          <li class="top-nav__item">
+            <a href="#" title="search">Поиск по сайту</a>
+          </li>
+          <li class="top-nav__item">
+            <a href="#" title="cart">Корзина пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <div class="order-page">
-    <p class="order-page__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-    <form action="/echo">
-      <fieldset class="fieldset">
-        <!-- <div class="fieldset__content"> -->
+  <main class="main-content">
+    <header class="main-content__header">
+      <h1 class="page-title">Вязание на заказ</h1>
+    </header>
+
+    <div class="order-page">
+      <p class="order-page__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form action="/echo">
+        <fieldset class="fieldset">
+          <!-- <div class="fieldset__content"> -->
           <legend>Тип</legend>
           <div class="fieldset__inputs">
             <input type="radio" id="interior-acc" name="product-type">
@@ -49,64 +49,64 @@
             <input type="radio" id="kid-toy" name="product-type">
             <label for="kid-toy" class="custom-radio"><span>Детская игрушка</span></label>
           </div>
-        <!-- </div> -->
-      </fieldset>
-      <fieldset>
-        <legend>Цвет</legend>
-        <input type="checkbox" id="color-white" name="product-color">
-        <label class="custom-checkbox" for="color-white"><span>Белый</span></label>
-        <input type="checkbox" id="color-gray" name="product-color">
-        <label class="custom-checkbox" for="color-gray"><span>Серый</span></label>
-        <input type="checkbox" id="color-tiffany" name="product-color">
-        <label class="custom-checkbox" for="color-tiffany"><span>"Тиффани"</span></label>
-        <input type="checkbox" id="color-black" name="product-color">
-        <label class="custom-checkbox" for="color-black"><span>Чёрный</span></label>
-        <input type="checkbox" id="color-pink" name="product-color">
-        <label class="custom-checkbox" for="color-pink"><span>Розовый</span></label>
-        <input type="checkbox" id="color-orange" name="product-color">
-        <label class="custom-checkbox" for="color-orange"><span>Оранжевый</span></label>
-      </fieldset>
-      <fieldset>
-        <legend class="personal-info">ФИО</legend>
-        <label for="person-name" class="personal-info__label">Имя:</label>
-        <input type="text" id="person-name" name="person-name" placeholder="Введите ваше имя*" required class="custom-input">
-        <label for="person-family-name" class="personal-info__label">Фамилия:</label>
-        <input type="text" id="person-family-name" name="person-family-name" placeholder="Укажите фамилию*" required class="custom-input">
-        <label for="person-fathers-name" class="personal-info__label">Отчество:</label>
-        <input type="text" id="person-fathers-name" name="person-fathers-name" placeholder="Отчество, если желаете" class="custom-input">
-      </fieldset>
-      <fieldset>
-        <legend>Тел</legend>
-        <label for="phone">Телефон</label>
-        <input type="tel" id="phone" name="phone" placeholder="+7 XXX XXX-XX-XX*" required class="custom-input">
-      </fieldset>
-      <fieldset>
-        <legend>E-mail</legend>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="Ваш Email*" required class="custom-input">
-      </fieldset>
-      <fieldset>
-        <legend>Доп</legend>
-        <label for="add-info">Дополнительно</label>
-        <textarea id="add-info" name="add-info" placeholder="Опишите все ваши пожелания к заказу" class="custom-input custom-input--textarea"></textarea>
-      </fieldset>
-      <p class="order-page__req">*Поля обязательны для заполнения</p>
-      <button class="button" title="Make an order">Отправить заказ</button>
-    </form>
-  </div>
-</main>
+          <!-- </div> -->
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <input type="checkbox" id="color-white" name="product-color">
+          <label class="custom-checkbox" for="color-white"><span>Белый</span></label>
+          <input type="checkbox" id="color-gray" name="product-color">
+          <label class="custom-checkbox" for="color-gray"><span>Серый</span></label>
+          <input type="checkbox" id="color-tiffany" name="product-color">
+          <label class="custom-checkbox" for="color-tiffany"><span>"Тиффани"</span></label>
+          <input type="checkbox" id="color-black" name="product-color">
+          <label class="custom-checkbox" for="color-black"><span>Чёрный</span></label>
+          <input type="checkbox" id="color-pink" name="product-color">
+          <label class="custom-checkbox" for="color-pink"><span>Розовый</span></label>
+          <input type="checkbox" id="color-orange" name="product-color">
+          <label class="custom-checkbox" for="color-orange"><span>Оранжевый</span></label>
+        </fieldset>
+        <fieldset>
+          <legend class="personal-info">ФИО</legend>
+          <label for="person-name" class="personal-info__label">Имя:</label>
+          <input type="text" id="person-name" name="person-name" placeholder="Введите ваше имя*" required class="custom-input">
+          <label for="person-family-name" class="personal-info__label">Фамилия:</label>
+          <input type="text" id="person-family-name" name="person-family-name" placeholder="Укажите фамилию*" required class="custom-input">
+          <label for="person-fathers-name" class="personal-info__label">Отчество:</label>
+          <input type="text" id="person-fathers-name" name="person-fathers-name" placeholder="Отчество, если желаете" class="custom-input">
+        </fieldset>
+        <fieldset>
+          <legend>Тел</legend>
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 XXX XXX-XX-XX*" required class="custom-input">
+        </fieldset>
+        <fieldset>
+          <legend>E-mail</legend>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Ваш Email*" required class="custom-input">
+        </fieldset>
+        <fieldset>
+          <legend>Доп</legend>
+          <label for="add-info">Дополнительно</label>
+          <textarea id="add-info" name="add-info" placeholder="Опишите все ваши пожелания к заказу" class="custom-input custom-input--textarea"></textarea>
+        </fieldset>
+        <p class="order-page__req">*Поля обязательны для заполнения</p>
+        <button class="button" title="Make an order">Отправить заказ</button>
+      </form>
+    </div>
+  </main>
 
-<footer class="footer">
-  <div class="social-links">
-    <ul class="social-links__list">
-      <li class="social-links__item"><a href="#" title="Instagram"></a></li>
-      <li class="social-links__item"><a href="#" title="Facebook"></a></li>
-      <li class="social-links__item"><a href="#" title="Twitter"></a></li>
-    </ul>
-  </div>
-  <div class="copyright">Разработано
-    <a href="#" title="Developer" target="_blank"></a>
-  </div>
-</footer>
+  <footer class="footer">
+    <div class="social-links">
+      <ul class="social-links__list">
+        <li class="social-links__item"><a href="#" title="Instagram"></a></li>
+        <li class="social-links__item"><a href="#" title="Facebook"></a></li>
+        <li class="social-links__item"><a href="#" title="Twitter"></a></li>
+      </ul>
+    </div>
+    <div class="copyright">Разработано
+      <a href="#" title="Developer" target="_blank"></a>
+    </div>
+  </footer>
 </body>
 </html>
