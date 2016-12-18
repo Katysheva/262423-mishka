@@ -13,3 +13,12 @@
     }
   }
 }
+@media ($desktop-widths) {
+  .product {
+    padding-top: 135px;
+
+  }
+  .main-content__wrapper {
+    padding-left: 16%;
+  }
+}

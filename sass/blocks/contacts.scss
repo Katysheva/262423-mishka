@@ -95,11 +95,14 @@
 
 @media ($desktop-widths) {
   .contacts {
-    @include container-middle();
-    position: relative;
-    margin: 0 auto;
-    padding-top: 150px;
-    margin-bottom: 105px;
+    @include container-fluid();
+    .main-content__wrapper {
+
+      position: relative;
+      margin: 0 auto;
+      padding-top: 150px;
+      margin-bottom: 105px;
+    }
   }
 
   .contacts__text-content {

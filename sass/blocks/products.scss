@@ -1,3 +1,21 @@
 .products {
   @include block-padding();
 }
+
+@media ($tablet-widths) {
+  .products {
+    padding: 80px 50px 55px;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+}
+
+@media ($desktop-widths) {
+  .products {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 130px 50px 60px;
+  }
+}

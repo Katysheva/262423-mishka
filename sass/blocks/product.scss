@@ -97,12 +97,9 @@
 
 @media ($desktop-widths) {
   .product {
-    // position: relative;
-    @include container-middle();
     padding-top: 135px;
 
   }
-
   .product__title {
     &--week {
       position: relative;
@@ -110,7 +107,7 @@
     h4 {
       position: absolute;
       top: 13%;
-      left: -16%;
+      left: -13%;
     }
   }
   .product__about {

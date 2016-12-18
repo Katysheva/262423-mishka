@@ -28,12 +28,13 @@
 @mixin container-fluid() {
   width: auto;
   @media ($tablet-widths) {
+    max-width: 950px;
     padding: 0 50px;
-    max-width: 1050px;
     margin: 0 auto;
   }
   @media ($desktop-widths) {
-    max-width: 1050px;
+    max-width: 1150px;
+    // padding: 0 50px;
     margin: 0 auto;
   }
 }

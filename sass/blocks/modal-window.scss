@@ -34,7 +34,7 @@
   &:before {
     content: '';
     display: block;
-    width: 30%;
+    // width: 30%;
     height: 50px;
     @include inputs-border();
     border-color: rgba($gray, 0.1);
@@ -48,17 +48,26 @@
     display: block;
     position: absolute;
     top: calc(50% - 10px);
-    left: 36px;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     margin: 0 auto;
   }
 }
 
+.modal-window__checkboxes {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-window__checkbox-item {
+  flex-basis: 30%;
+}
 
 @media ($tablet-widths) {
   .modal-window {
     width: 85%;
     margin: 0 auto;
+    padding: 45px 108px;
     h2 {
       font-size: 30px;
     }
