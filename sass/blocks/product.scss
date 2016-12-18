@@ -52,8 +52,7 @@
 
 @media ($tablet-widths) {
   .product {
-    // @include block-padding($left-right: 0);
-    padding: 35px 0;
+    padding: 35px 50px;
   }
   .product__description {
     position: relative;

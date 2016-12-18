@@ -1,15 +1,6 @@
 .order-page {
   @include block-padding();
 
-  fieldset {
-    border: 0;
-    border-top: 1px solid $accent-color;
-    padding: 0 0 30px;
-    &:last-of-type {
-      padding: 0 0 20px;
-    }
-
-  }
   legend {
     color: $accent-color;
     font-size: 17px;
@@ -42,24 +33,73 @@
   line-height: 16px;
   margin: 0;
 }
+
 @media ($tablet-widths) {
   .order-page {
-    @include container-fluid();
     padding: 80px 0 50px;
 
-    fieldset {
-      border-top: 0;
-    }
-
-    .fieldset__content {
-      display: flex;
-    }
-
-    .fieldset {
+    label {
+      font-size: 19px;
     }
   }
   .order-page__intro {
     font-size: 17px;
     line-height: 30px;
+    padding: 0 50px;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .order-page__footer {
+    display: flex;
+    padding: 0 50px;
+  }
+
+  .order-page__footer-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .order-page__req {
+    order: 2;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .order-page__button {
+    flex-basis: 35%;
+    margin-top: 0;
+  }
+
+  .personal-info__label {
+    padding-right: 20px;
+  }
+}
+
+@media ($desktop-widths) {
+  .order-page__intro-wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .order-page__intro {
+    max-width: 66.7%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .order-page__footer {
+    justify-content: center;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .order-page__footer-wrapper {
+    width: 66.7%;
+    margin-left: -10px;
+    display: flex;
+    justify-content: space-between;
   }
 }

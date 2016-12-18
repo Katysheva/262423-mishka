@@ -2,7 +2,7 @@
   @include block-padding();
 }
 .reviews__content {
-  @include container-fluid();
+  // @include container-fluid();
 }
 .reviews__arrows {
   display: flex;

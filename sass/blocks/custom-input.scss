@@ -6,6 +6,7 @@
   color: $gray;
   font-size: 17px;
   font-family: $opensans;
+  background-color: transparent;
   &:focus {
     border-bottom-color: $accent-color;
   }
@@ -22,6 +23,15 @@
     padding: 17px 20px;
     &:focus{
       outline: 2px solid $accent-color;
+    }
+  }
+}
+
+@media ($tablet-widths) {
+  .custom-input {
+    padding: 20px;
+    &--textarea {
+      margin-top: 0;
     }
   }
 }

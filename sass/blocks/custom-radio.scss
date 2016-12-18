@@ -62,3 +62,10 @@ input[name="product-type"]{
     }
   }
 }
+
+
+@media ($tablet-widths) {
+  .custom-radio:first-of-type {
+    margin-top: 0;
+  }
+}

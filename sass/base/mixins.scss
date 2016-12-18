@@ -28,12 +28,11 @@
 @mixin container-fluid() {
   width: auto;
   @media ($tablet-widths) {
-    width: 86%;
+    padding: 0 50px;
     max-width: 1050px;
     margin: 0 auto;
   }
   @media ($desktop-widths) {
-    // width: 86%;
     max-width: 1050px;
     margin: 0 auto;
   }
@@ -43,7 +42,7 @@
   width: auto;
   @media ($desktop-widths) {
     max-width: 1050px;
-    width: 84%;
+    // width: 84%;
     padding-left: 16%;
   }
 }

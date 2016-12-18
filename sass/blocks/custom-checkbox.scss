@@ -34,3 +34,22 @@ input[type="checkbox"]{
     border-color: rgba($gray, 0.3);
   }
 }
+
+@media ($tablet-widths) {
+  .custom-checkbox:nth-of-type(-n+2) {
+    margin-top: 0;
+  }
+  .custom-checkbox {
+    flex-basis: 50%;
+    margin-top: 25px;
+  }
+}
+
+@media ($desktop-widths) {
+  .custom-checkbox:nth-of-type(-n+3) {
+    margin-top: 0;
+  }
+  .custom-checkbox {
+    flex-basis: 33%;
+  }
+}

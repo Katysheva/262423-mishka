@@ -2,3 +2,19 @@
   @include block-padding();
   background: $light-gray;
 }
+
+.footer__logo {
+  display: none;
+}
+
+@media ($tablet-widths) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include block-padding(50px, 50px);
+  }
+  .footer__logo {
+    display: block;
+  }
+}

@@ -1,0 +1,22 @@
+.sub-top-nav {
+  display: none;
+}
+
+@media ($desktop-widths) {
+  .sub-top-nav {
+    display: block;
+    position: absolute;
+  }
+  .sub-top-nav__list {
+    display: flex;
+    font-size: 15px;
+  }
+  .sub-top-nav__item {
+    font-family: $opensans-bold;
+    padding: 25px;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+  }
+}
