@@ -21,6 +21,7 @@
   a[href^=mailto] {
     border-bottom: 1px solid $accent-color;
     margin-left: 35px;
+    display: inline-block;
 
     &:hover, &:focus {
       color: $accent-color;
@@ -32,12 +33,11 @@
       border-bottom-color: rgba(#46c1ae, 0.1);
     }
   }
-  p, div {
-    display: flex;
-  }
-
   address {
-    margin-left: 35px;
+    margin-left: 30px;
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
@@ -88,18 +88,14 @@
     align-items: flex-start;
     justify-content: space-between;
     padding: 0;
-    p, div {
-      flex-basis: 50%;
+    p {
       margin-top: 0;
-    }
-    a[href^=mailto] {
-      margin-left: 30px;
-    }
-    address {
-      margin-left: 30px;
     }
   }
 
+  .contacts__address {
+    width: 50%;
+  }
   .contacts__footer {
     a[title^='Write'] {
       width: 34%;
@@ -137,7 +133,9 @@
       }
     }
   }
-
+  .contacts__address {
+    width: 100%;
+  }
   .contacts__info {
     flex-direction: column;
   }
