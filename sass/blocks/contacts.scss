@@ -5,6 +5,7 @@
 
 .contacts__text-content {
   position: relative;
+  padding-bottom: 45px;
   h3 {
     @include block-padding($top-bottom: 0);
     &:after {
@@ -19,6 +20,7 @@
 
   a[href^=mailto] {
     border-bottom: 1px solid $accent-color;
+    margin-left: 35px;
 
     &:hover, &:focus {
       color: $accent-color;
@@ -30,6 +32,13 @@
       border-bottom-color: rgba(#46c1ae, 0.1);
     }
   }
+  p, div {
+    display: flex;
+  }
+
+  address {
+    margin-left: 35px;
+  }
 }
 
 .contacts__footer {
@@ -38,9 +47,11 @@
 
 .contacts__map {
   width: 100%;
+  max-height: 457px;
+  overflow: hidden;
   img {
     width: 100%;
-    height: auto;
+    // height: 100%;
   }
 }
 
@@ -80,6 +91,12 @@
     p, div {
       flex-basis: 50%;
       margin-top: 0;
+    }
+    a[href^=mailto] {
+      margin-left: 30px;
+    }
+    address {
+      margin-left: 30px;
     }
   }
 
@@ -133,8 +150,6 @@
     text-align: right;
     img {
       display: block;
-      height: 100%;
-      width: auto;
       margin: auto 0 auto auto;
     }
   }

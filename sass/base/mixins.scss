@@ -27,15 +27,13 @@
 }
 @mixin container-fluid() {
   width: auto;
+  margin: 0 auto;
   @media ($tablet-widths) {
     max-width: 950px;
     padding: 0 50px;
-    margin: 0 auto;
   }
   @media ($desktop-widths) {
     max-width: 1150px;
-    // padding: 0 50px;
-    margin: 0 auto;
   }
 }
 
@@ -43,7 +41,6 @@
   width: auto;
   @media ($desktop-widths) {
     max-width: 1050px;
-    // width: 84%;
     padding-left: 16%;
   }
 }

@@ -6,15 +6,7 @@
   font-family: $opensans-bold;
   flex-basis: 100%;
 
-  a {
-    display: block;
-    padding: 20px 30px;
-    color: $main-bg-color;
 
-    &:active {
-      color: rgba($main-bg-color, 0.3);
-    }
-  }
   &:first-of-type{
     background-color: $green-lighter;
     &:hover, &:focus, &:active {
@@ -26,6 +18,22 @@
     &:hover, &:focus, &:active {
       background-color: #46c1ae;
     }
+  }
+}
+
+
+.category-list__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 30px;
+  color: $main-bg-color;
+  &:hover, &:focus {
+    color: $main-bg-color;
+  }
+  &:active {
+    color: rgba($main-bg-color, 0.3);
   }
 }
 

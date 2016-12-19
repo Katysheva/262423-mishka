@@ -42,6 +42,10 @@ input[type="checkbox"]{
   .custom-checkbox {
     flex-basis: 50%;
     margin-top: 25px;
+    &:before {
+      width: 48px;
+      height: 48px;
+    }
   }
 }
 

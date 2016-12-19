@@ -65,7 +65,30 @@ input[name="product-type"]{
 
 
 @media ($tablet-widths) {
-  .custom-radio:first-of-type {
-    margin-top: 0;
+  .custom-radio{
+    &:first-of-type {
+      margin-top: 0;
+
+      span {
+        display: inline-block;
+        padding-top: 13px;
+      }
+    }
+    span {
+      padding-top: 13px;
+    }
+    &:before {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  input[name="product-type"]{
+    &:not(checked) + .custom-radio:after{
+      top: 15px;
+      left: 15px;
+      width: 22px;
+      height: 22px;
+    }
   }
 }
