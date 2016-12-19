@@ -2,6 +2,7 @@
 @import 'base/font-styles.scss';
 @import 'base/base-styles.scss';
 @import 'base/mixins.scss';
+@import 'base/colored-section.scss';
 
 @import 'blocks/about-us.scss';
 @import 'blocks/button.scss';
@@ -25,3 +26,5 @@
 @import 'blocks/video.scss';
 @import 'blocks/custom-input.scss';
 @import 'blocks/personal-info.scss';
+@import 'blocks/fieldset.scss';
+@import 'blocks/sub-top-nav.scss';

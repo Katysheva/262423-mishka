@@ -1,5 +1,60 @@
 .about-us {
+  @include container-fluid();
+
   @include block-padding();
   font-size: 17px;
   font-family: $opensans-bold;
+}
+.about-us__item {
+  padding-bottom: 40px;
+  padding-right: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-us__img {
+  display: block;
+  margin-bottom: 25px;
+}
+
+@media ($tablet-widths) {
+  .about-us {
+    padding: 35px 50px;
+  }
+  .about-us__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .about-us__item {
+    flex-basis: 40%;
+    padding-bottom: 60px;
+
+    &[title=eco] {
+      order: 1;
+    }
+    &[title=hand-made] {
+      order: 2;
+    }
+    &[title^=scand] {
+      order: 3;
+    }
+    &[title^=domestic] {
+      order: 4;
+    }
+    &[title^=likes] {
+      order: 5;
+    }
+    &[title^=gift] {
+      order: 6;
+    }
+  }
+}
+@media ($desktop-widths) {
+  .about-us {
+    .main-content__wrapper {
+      padding-right: 16%;
+    }
+  }
 }

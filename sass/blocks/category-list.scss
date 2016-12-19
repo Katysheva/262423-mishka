@@ -1,23 +1,12 @@
-
 .category-list{
-
 }
-.category-list__item{
 
-}
 .category-list__item{
   font-size: 19px;
   font-family: $opensans-bold;
+  flex-basis: 100%;
 
-  a {
-    display: block;
-    padding: 20px 30px;
-    color: $main-bg-color;
 
-    &:active {
-      color: rgba($main-bg-color, 0.3);
-    }
-  }
   &:first-of-type{
     background-color: $green-lighter;
     &:hover, &:focus, &:active {
@@ -29,5 +18,32 @@
     &:hover, &:focus, &:active {
       background-color: #46c1ae;
     }
+  }
+}
+
+
+.category-list__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 30px;
+  color: $main-bg-color;
+  &:hover, &:focus {
+    color: $main-bg-color;
+  }
+  &:active {
+    color: rgba($main-bg-color, 0.3);
+  }
+}
+
+@media ($tablet-widths) {
+  .category-list {
+    @include container-fluid();
+    display: flex;
+  }
+  .category-list__item {
+    flex-basis: 50%;
+    font-size: 20px;
   }
 }

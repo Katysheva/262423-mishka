@@ -6,10 +6,18 @@
   color: $gray;
   font-size: 17px;
   font-family: $opensans;
+  background-color: transparent;
   &:focus {
     border-bottom-color: $accent-color;
   }
   &::-webkit-input-placeholder {
+    color: rgba($gray, 0.3);
+  }
+  &:-moz-placeholder {
+    color: rgba($gray, 0.3);
+  }
+
+  &:-ms-input-placeholder {
     color: rgba($gray, 0.3);
   }
 
@@ -22,6 +30,16 @@
     padding: 17px 20px;
     &:focus{
       outline: 2px solid $accent-color;
+    }
+  }
+}
+
+@media ($tablet-widths) {
+  .custom-input {
+    padding: 20px;
+    font-size: 19px;
+    &--textarea {
+      margin-top: 0;
     }
   }
 }

@@ -1,0 +1,17 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  font-family: $opensans-bold;
+  font-size: 19px;
+  padding-top: 30px;
+}
+
+a[title="Developer"] {
+  padding-left: 30px;
+}
+
+@media ($tablet-widths) {
+  .copyright {
+    padding-top: 0;
+  }
+}

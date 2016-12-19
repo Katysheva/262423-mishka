@@ -1,0 +1,18 @@
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid  #e5e5e5;
+}
+
+.social-links__item {
+  padding-left: 40px;
+}
+
+@media ($tablet-widths) {
+  .social-links {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}

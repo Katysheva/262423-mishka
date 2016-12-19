@@ -1,4 +1,23 @@
 .footer {
-  @include block-padding();
   background: $light-gray;
+}
+.footer__wrapper {
+  @include block-padding();
+  @include container-fluid();
+}
+.footer__logo {
+  display: none;
+}
+
+@media ($tablet-widths) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer__logo {
+    display: block;
+  }
 }

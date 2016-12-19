@@ -1,9 +1,67 @@
 .header {
-  @include block-padding($top-bottom: 0);
+  position: relative;
+  border-bottom: 1px solid  #dfdfdf;
 }
+
+.header__wrapper {
+  @include container-fluid();
+  position: relative;
+}
+
 .header__logo {
+  padding: 22px 0;
   img {
     display: block;
     margin: 0 auto;
+  }
+}
+.header__toggle-button {
+  background-image: url('../img/icon-menu-open.svg');
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  width: 22px;
+  height: 17px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.header__feature {
+  display: none;
+}
+
+@media ($tablet-widths) {
+  .header {
+  }
+  .header__toggle-button {
+    display: none;
+  }
+  .header__logo {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+  }
+  .header__feature {
+    position: absolute;
+    display: block;
+    bottom: -43px;
+    right: 0;
+    margin: 0;
+    padding-right: 50px;
+    font-size: 15px;
+  }
+}
+@media ($desktop-widths) {
+  .header__logo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

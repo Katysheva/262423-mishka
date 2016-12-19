@@ -1,7 +1,46 @@
 @mixin block-padding($top-bottom: 35px, $left-right: 30px) {
   padding: $top-bottom $left-right;
+
 }
 
 @mixin inputs-border() {
   border: 2px solid $gray;
+}
+
+@mixin container() {
+  // width: 320px;
+  margin: 0 auto;
+  @media ($tablet-widths) {
+    width: 668px;
+  }
+
+  @media ($desktop-widths) {
+    width: 1050px;
+  }
+}
+
+@mixin container-narrow() {
+  @media ($desktop-widths) {
+    max-width: calc(1050px * 0.66);
+    margin: 0 auto;
+  }
+}
+@mixin container-fluid() {
+  width: auto;
+  margin: 0 auto;
+  @media ($tablet-widths) {
+    max-width: 950px;
+    padding: 0 50px;
+  }
+  @media ($desktop-widths) {
+    max-width: 1150px;
+  }
+}
+
+@mixin container-middle() {
+  width: auto;
+  @media ($desktop-widths) {
+    max-width: 1050px;
+    padding-left: 16%;
+  }
 }

@@ -1,0 +1,24 @@
+.main-content {
+}
+.main-content__header {
+  background-color: #f1f1f1;
+  &--main-page {
+    background-color: #f9f9f9;
+  }
+
+}
+@media ($tablet-widths) {
+  .main-content {
+    header {
+    }
+  }
+}
+@media ($desktop-widths) {
+  .product {
+    padding-top: 135px;
+
+  }
+  .main-content__wrapper {
+    padding-left: 16%;
+  }
+}
