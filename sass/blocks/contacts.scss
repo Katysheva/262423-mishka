@@ -108,7 +108,9 @@
 
 @media ($desktop-widths) {
   .contacts {
-    @include container-fluid();
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 50px;
     .main-content__wrapper {
 
       position: relative;
