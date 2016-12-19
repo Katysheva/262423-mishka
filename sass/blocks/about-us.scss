@@ -23,13 +23,12 @@
   }
   .about-us__list {
     display: flex;
-    // flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-height: 460px;
   }
   .about-us__item {
-    flex-basis: 50%;
+    flex-basis: 40%;
     padding-bottom: 60px;
 
     &[title=eco] {
@@ -51,8 +50,6 @@
       order: 6;
     }
   }
-
-
 }
 @media ($desktop-widths) {
   .about-us {
