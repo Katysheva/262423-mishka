@@ -41,9 +41,8 @@
     display: block;
     background-image: url('../img/icon-video.svg');
     background-repeat: no-repeat;
-    background-position: -1px -9px;
     width: 36px;
-    height: 22px;
+    height: 32px;
     padding-right: 28px;
   }
 }
@@ -120,7 +119,7 @@
 
 
   .video__title {
-    flex-basis: 40%;
+    // flex-basis: 40%;
     width: 33%;
     padding: 50px 50px 0 60px;
     flex-direction: column;
@@ -132,7 +131,7 @@
     }
   }
   .video__info {
-    flex-basis: 40%;
+    // flex-basis: 40%;
     width: 33%;
     padding: 15px 60px 60px;
     // padding-top: 30px;
