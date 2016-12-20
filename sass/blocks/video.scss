@@ -101,10 +101,9 @@
     // justify-content: flex-end;
     align-items: flex-end;
     overflow: hidden;
-
-
-
+    min-height: 450px;
   }
+
   .video__wrapper {
     position: absolute;
     width: 65%;
@@ -126,6 +125,7 @@
     padding: 50px 50px 0 60px;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 15px;
     &:before {
       padding-bottom: 25px;
       padding-right: 0;
@@ -134,8 +134,11 @@
   .video__info {
     flex-basis: 40%;
     width: 33%;
-    padding: 60px;
-    padding-top: 32px;
+    padding: 15px 60px 60px;
+    // padding-top: 30px;
+    p {
+      // margin-top: 30px;
+    }
     a[title^=Make] {
       margin-top: 45px;
     }
