@@ -1,7 +1,8 @@
 .video {
-  @include block-padding();
+  @include block-padding(0);
   @include container-fluid();
   padding-bottom: 60px;
+  margin-top: -4px;
 }
 
 .video__content {
@@ -32,7 +33,7 @@
 
 .video__title {
   display: flex;
-  padding: 30px 35px;
+  padding: 25px 35px;
   align-items: center;
   margin-bottom: 0;
   &:before {
@@ -40,15 +41,22 @@
     display: block;
     background-image: url('../img/icon-video.svg');
     background-repeat: no-repeat;
-    background-size: 36px 22px;
     width: 36px;
-    height: 22px;
-    padding-right: 25px;
+    height: 32px;
+    padding-right: 28px;
   }
 }
 
 .video__info {
-  padding: 35px;
+  padding: 19px 34px 30px;
+  p {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  a[title^=Make] {
+    margin-top: 25px;
+  }
 }
 
 @media ($tablet-widths) {
@@ -57,10 +65,28 @@
   }
   .video__title {
     order: 1;
-    padding-bottom: 5px;
+    padding: 35px 30px 5px;
+    font-size: 20px;
   }
   .video__info {
     order: 1;
+    padding: 30px;
+    padding-bottom: 45px;
+    p {
+      font-size: 15px;
+      line-height: 30px;
+    }
+    a[title^=Make] {
+      margin-top: 33px;
+    }
+  }
+  .video__wrapper {
+    min-height: 450px;
+    overflow: hidden;
+    video {
+      min-height: 450px;
+      width: auto;
+    }
   }
 }
 
@@ -74,13 +100,12 @@
     // justify-content: flex-end;
     align-items: flex-end;
     overflow: hidden;
-
-
-
+    min-height: 450px;
   }
+
   .video__wrapper {
     position: absolute;
-    width: 64%;
+    width: 65%;
     height: 100%;
     top: 0;
     left: 0;
@@ -94,24 +119,27 @@
 
 
   .video__title {
-    flex-basis: 40%;
-    width: 35%;
+    // flex-basis: 40%;
+    width: 33%;
     padding: 50px 50px 0 60px;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 15px;
     &:before {
-      padding-bottom: 30px;
+      padding-bottom: 25px;
       padding-right: 0;
-      margin-left: -6px;
     }
   }
   .video__info {
-    flex-basis: 40%;
-    width: 35%;
-    padding: 60px;
-    padding-top: 50px;
-    a {
-      margin-top: 50px;
+    // flex-basis: 40%;
+    width: 33%;
+    padding: 15px 60px 60px;
+    // padding-top: 30px;
+    p {
+      // margin-top: 30px;
+    }
+    a[title^=Make] {
+      margin-top: 45px;
     }
   }
 }

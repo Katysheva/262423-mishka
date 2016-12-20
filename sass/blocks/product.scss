@@ -1,15 +1,18 @@
 .product {
   @include container-fluid();
-  @include block-padding();
+  padding: 30px 25px 35px 30px;
 
 }
 
 .product__title {
   &--week {
+    h2 {
+      margin-bottom: 8px;
+    }
     h4 {
       color: $green-lighter;
       text-transform: uppercase;
-      font-size: 14px;
+      font-size: 17px;
       line-height: 16px;
       br {
         display: none;
@@ -23,7 +26,7 @@
 .product__characteristics {
   border-collapse: collapse;
   width: 100%;
-  margin: 40px 0;
+  margin: 0 0 25px 0;
   tbody {
     tr {
       td {
@@ -34,15 +37,23 @@
     }
   }
 }
-
+.product__about {
+  p {
+    line-height: 25px;
+  }
+}
 .product__footer {
+  a[title^=Make] {
+    margin-top: 20px;
+  }
 }
 
 .product__price {
   text-align: center;
   width: 100%;
   font-family: $opensans-bold;
-  font-size: 20px;
+  font-size: 17px;
+  margin: 15px 0;
 }
 
 .product__image {
@@ -52,7 +63,7 @@
 
 @media ($tablet-widths) {
   .product {
-    padding: 35px 50px;
+    padding: 60px 50px;
   }
   .product__description {
     position: relative;
@@ -60,22 +71,31 @@
     flex-direction: column;
   }
   .product__about {
-    max-width: 50%;
+    max-width: 53%;
     margin-top: 0;
     font-size: 17px;
     padding-right: 45px;
+
+    p {
+      line-height: 30px;
+      margin-top: 0;
+    }
   }
   .product__characteristics {
     padding-right: 45px;
+    margin: 34px 0;
   }
   .product__footer {
-    max-width: 50%;
+    max-width: 52%;
     padding-right: 45px;
+    a[title^=Make] {
+      margin-top: 30px;
+    }
   }
   .product__image {
     height: 100%;
     width: auto;
-    max-width: 50%;
+    max-width: 47%;
     position: absolute;
     right: 0;
     top: 50%;
@@ -84,12 +104,18 @@
   .product__title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    h4 {
-      text-align: center;
-      padding-right: 30px;
-      br {
-        display: inline-block;
+    align-items: flex-start;
+    &--week {
+      h2 {
+        margin-bottom: 50px;
+      }
+      h4 {
+        text-align: center;
+        padding-right: 27px;
+        padding-top: 13px;
+        br {
+          display: inline-block;
+        }
       }
     }
   }
@@ -97,13 +123,17 @@
 
 @media ($desktop-widths) {
   .product {
-    padding-top: 135px;
+    padding-top: 142px;
+    padding-bottom: 75px;
 
   }
   .product__title {
     &--week {
       position: relative;
     }
+    // h2 {
+    //   margin-bottom: 32px;
+    // }
     h4 {
       position: absolute;
       top: 13%;
@@ -115,6 +145,11 @@
   }
   .product__footer {
     max-width: 40%;
+    padding-right: 58px;
+
+    a[title^=Make] {
+      margin-top: 32px;
+    }
   }
   .product__image {
     // position: absolute;
@@ -125,5 +160,8 @@
     transform: none;
     top: inherit;
     z-index: -1;
+  }
+  .product__characteristics {
+    margin: 46px 0 85px;
   }
 }

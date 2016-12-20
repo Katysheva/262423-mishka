@@ -1,5 +1,5 @@
 .order-page {
-  @include block-padding();
+  @include block-padding(15px);
 
   legend {
     color: $accent-color;
@@ -27,6 +27,7 @@
 .order-page__intro {
   font-size: 13px;
   line-height: 24px;
+  margin-bottom: 20px;
 }
 .order-page__req {
   font-size: 14px;
@@ -77,6 +78,9 @@
 }
 
 @media ($desktop-widths) {
+  .order-page {
+    padding-top: 140px;
+  }
   .order-page__intro-wrapper {
     max-width: 1050px;
     margin: 0 auto;

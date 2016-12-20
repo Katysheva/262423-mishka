@@ -5,3 +5,9 @@
   margin-top: 20px;
   display: block;
 }
+
+@media ($tablet-widths) {
+  .personal-info__label {
+    margin-top: 20px;
+  }
+}
