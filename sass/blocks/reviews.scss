@@ -1,11 +1,13 @@
 .reviews {
-  @include block-padding();
+  // @include block-padding(0);
+  padding: 0 30px 45px;
 }
 .reviews__content {
   // @include container-fluid();
 }
 .reviews__arrows {
   display: flex;
+  padding-top: 10px;
   button {
     background-size: 50px 40px;
     background-position: 50% 50%;
@@ -17,7 +19,16 @@
     padding: 10px;
   }
 }
-
+.review__footer {
+  padding-top: 10px;
+  h3 {
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 18px;
+    margin-top: 0;
+  }
+}
 .reviews__prev {
   background-image: url('../img/icon-left-arrow.svg');
 
@@ -32,13 +43,17 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 0;
-    padding: 90px 50px 50px;
+    padding: 75px 50px 50px;
+    margin-bottom: 65px;
   }
   .reviews__content {
     position: relative;
+    h2 {
+      margin-bottom: 45px;
+    }
   }
   .reviews__arrows {
-    width: 25%;
+    width: 21%;
     justify-content: space-between;
     position: absolute;
     bottom: 0;
@@ -51,26 +66,13 @@
   }
   .reviews__button {
     position: absolute;
-    right: 0;
+    right: -20px;
     top: 0;
-    max-width: 26%;
+    max-width: 27%;
     margin-top: 0;
   }
-}
-
-@media ($tablet-widths) {
-  .reviews__arrows {
-    width: 20%;
-
-  }
-  .reviews__button {
-    width: 20%;
-    padding: 15px 0;
-  }
-
-  .reviews__content {
-    width: 100%;
-    margin: 0 0;
+  .review__footer {
+    padding-top: 40px;
   }
 }
 
@@ -78,10 +80,39 @@
   .reviews {
     // width: 100%;
     max-width: 1050px;
-    margin: 0 auto;
-    padding: 90px 0 50px;
+    margin: 0 auto 65px;
+    padding: 65px 0 80px;
   }
   .reviews__content {
     padding-left: 16%;
   }
+  .review__footer {
+    padding-top: 27px;
+    h3 {
+      font-size: 17px;
+      line-height: 24px;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 17px;
+      margin-top: 0;
+    }
+  }
+  .reviews__arrows {
+    width: 13%;
+    right: 2%;
+  }
+
+  .reviews__button {
+    width: 16.5%;
+    padding: 13px 0;
+    top: 5px;
+    right: 0;
+  }
+
+  .reviews__content {
+    width: 100%;
+    margin: 0 0;
+  }
+
 }

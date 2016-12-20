@@ -29,6 +29,11 @@
 
   padding: 20px 30px;
   color: $main-bg-color;
+
+span {
+  flex-basis: 50%;
+}
+
   &:hover, &:focus {
     color: $main-bg-color;
   }

@@ -8,6 +8,7 @@
   padding-bottom: 45px;
   h3 {
     @include block-padding($top-bottom: 0);
+    margin-bottom: 28px;
     &:after {
       display: none;
       content: '';
@@ -61,7 +62,7 @@
   }
 
   .contacts__text-content {
-    padding: 70px 50px 65px;
+    padding: 60px 50px 65px;
     position: relative;
 
     h3 {
@@ -110,13 +111,12 @@
   .contacts {
     max-width: 1150px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 70px 50px 105px;
     .main-content__wrapper {
 
       position: relative;
       margin: 0 auto;
-      padding-top: 150px;
-      margin-bottom: 105px;
+      padding-top: 100px;
     }
   }
 
@@ -127,11 +127,12 @@
     h3 {
       font-size: 53px;
       line-height: 57px;
+      margin-bottom: 45px;
 
       &:after {
         top: -10px;
         right: auto;
-        left: -125px;
+        left: -107px;
       }
     }
   }
@@ -140,6 +141,9 @@
   }
   .contacts__info {
     flex-direction: column;
+    p {
+      margin-bottom: 33px;
+    }
   }
 
   .contacts__map {
@@ -156,7 +160,7 @@
   .contacts__footer {
     padding: 0;
     a[title^='Write'] {
-      width: 34%;
+      width: 26%;
       margin: 85px 0 0;
     }
   }

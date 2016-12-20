@@ -1,7 +1,7 @@
 .custom-input {
   border: 0;
   border-bottom: 2px solid $gray;
-  padding: 15px 0;
+  padding: 12px 0;
   width: 100%;
   color: $gray;
   font-size: 17px;
@@ -36,10 +36,15 @@
 
 @media ($tablet-widths) {
   .custom-input {
-    padding: 20px;
+    padding: 16px;
     font-size: 19px;
     &--textarea {
       margin-top: 0;
     }
+  }
+}
+@media ($tablet-widths) {
+  .custom-input {
+    padding: 16px;
   }
 }

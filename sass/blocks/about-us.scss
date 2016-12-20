@@ -4,9 +4,13 @@
   @include block-padding();
   font-size: 17px;
   font-family: $opensans-bold;
+
+  h2 {
+    margin-bottom: 35px;
+  }
 }
 .about-us__item {
-  padding-bottom: 40px;
+  padding-bottom: 25px;
   padding-right: 45px;
   display: flex;
   flex-direction: column;
@@ -14,12 +18,15 @@
 }
 .about-us__img {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 @media ($tablet-widths) {
   .about-us {
-    padding: 35px 50px;
+    padding: 60px 50px 30px;
+    h2 {
+      margin-bottom: 50px;
+    }
   }
   .about-us__list {
     display: flex;
@@ -28,8 +35,10 @@
     justify-content: space-between;
   }
   .about-us__item {
-    flex-basis: 40%;
-    padding-bottom: 60px;
+    flex-basis: 50%;
+    padding-bottom: 50px;
+    font-size: 20px;
+    padding-right: 0;
 
     &[title=eco] {
       order: 1;
@@ -50,11 +59,26 @@
       order: 6;
     }
   }
+  .about-us__img {
+    margin-bottom: 10px;
+  }
 }
 @media ($desktop-widths) {
   .about-us {
+    padding-top: 75px;
+    padding-bottom: 30px;
     .main-content__wrapper {
       padding-right: 16%;
     }
+    h2 {
+      margin-bottom: 55px;
+    }
   }
+  .about-us__item {
+    // flex-basis: 50%;
+    padding-bottom: 60px;
+  }
+  // .about-us__img {
+  //   margin-bottom: 10px;
+  // }
 }

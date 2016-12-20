@@ -1,6 +1,6 @@
 .custom-checkbox {
   display: block;
-  margin-top: 30px;
+  margin-top: 22px;
   &:before {
     content: '';
     float: left;
@@ -54,6 +54,6 @@ input[type="checkbox"]{
     margin-top: 0;
   }
   .custom-checkbox {
-    flex-basis: 33%;
+    flex-basis: 30%;
   }
 }

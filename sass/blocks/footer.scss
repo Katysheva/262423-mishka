@@ -2,7 +2,7 @@
   background: $light-gray;
 }
 .footer__wrapper {
-  @include block-padding();
+  @include block-padding(22px);
   @include container-fluid();
 }
 .footer__logo {
@@ -19,5 +19,6 @@
   }
   .footer__logo {
     display: block;
+    flex-basis: 30%;
   }
 }

@@ -2,6 +2,12 @@
 
 }
 .personal-info__label {
-  margin-top: 20px;
+  margin-top: 22px;
   display: block;
+}
+
+@media ($tablet-widths) {
+  .personal-info__label {
+    margin-top: 20px;
+  }
 }
