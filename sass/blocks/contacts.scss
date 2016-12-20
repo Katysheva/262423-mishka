@@ -5,7 +5,7 @@
 
 .contacts__text-content {
   position: relative;
-  padding-bottom: 45px;
+  padding-bottom: 40px;
   h3 {
     @include block-padding($top-bottom: 0);
     margin-bottom: 28px;
@@ -37,11 +37,16 @@
   }
   address {
     margin-left: 20px;
-    width: 70%;
+    width: 60%;
     display: inline-block;
     vertical-align: top;
     font-style: normal;
   }
+}
+
+.contacts__address {
+  line-height: 30px;
+  padding-top: 10px;
 }
 
 .contacts__footer {
@@ -64,7 +69,7 @@
   }
 
   .contacts__text-content {
-    padding: 60px 50px 65px;
+    padding: 60px 50px;
     position: relative;
 
     h3 {
@@ -90,12 +95,15 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 0;
+    padding: 20px 0 0;
+    font-size: 17px;
     p {
       margin-top: 0;
     }
   }
-
+  .contacts__address {
+    padding-top: 0;
+  }
   .contacts__address {
     width: 50%;
   }
@@ -123,7 +131,7 @@
   }
 
   .contacts__text-content {
-    max-width: 35%;
+    max-width: 40%;
     padding: 0;
 
     h3 {
@@ -143,8 +151,9 @@
   }
   .contacts__info {
     flex-direction: column;
+    padding: 0;
     p {
-      margin-bottom: 33px;
+      margin-bottom: 30px;
     }
   }
 

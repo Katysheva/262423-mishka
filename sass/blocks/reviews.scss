@@ -19,6 +19,11 @@
     padding: 10px;
   }
 }
+
+.reviews__item {
+  font-size: 15px;
+}
+
 .review__footer {
   padding-top: 10px;
   h3 {
@@ -71,6 +76,11 @@
     max-width: 27%;
     margin-top: 0;
   }
+
+  .reviews__item {
+    font-size: 17px;
+  }
+
   .review__footer {
     padding-top: 40px;
   }

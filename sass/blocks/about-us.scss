@@ -1,7 +1,7 @@
 .about-us {
   @include container-fluid();
 
-  @include block-padding();
+  @include block-padding(35px);
   font-size: 17px;
   font-family: $opensans-bold;
 
