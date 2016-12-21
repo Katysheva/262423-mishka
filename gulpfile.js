@@ -7,6 +7,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var rename = require("gulp-rename");
+var runSequence = require('gulp-run-sequence');
 var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
 var mqpacker = require("css-mqpacker");
@@ -41,7 +42,7 @@ gulp.task("symbols", function() {
     inlineSvg: true
   }))
   .pipe(rename("symbols.svg"))
-  .pipe(gulp.dest("img"));
+  .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("serve", ["style"], function() {
@@ -78,10 +79,9 @@ gulp.task("copy", function() {
  .pipe(gulp.dest("build"));
 });
 
-
-gulp.task("build",
-  ["clean", "copy", "style", "images", "symbols"]
-);
+gulp.task('build', function(cb) {
+  runSequence('clean', ["copy", "style", "images", "symbols"], cb);
+});
 
 var del = require("del");
 gulp.task("clean", function() {
