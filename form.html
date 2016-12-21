@@ -22,8 +22,8 @@
           </svg>
         </a>
       </div>
-      <button class="header__toggle-button header__toggle-button--close" type="button" title="Open menu"></button>
-      <nav class="top-nav">
+      <button class="header__toggle-button" onclick="openMenu()" id="menu-toggle" type="button" title="Open menu"></button>
+      <nav id="top-nav" class="top-nav top-nav--no-js">
         <div class="top-nav__list">
           <ul class="top-nav__left">
             <li class="top-nav__item">
@@ -136,7 +136,12 @@
               <legend>Тел</legend>
               <div class="fieldset__inputs">
                 <label for="phone">Телефон</label>
-                <input type="tel" id="phone" name="phone" placeholder="+7 XXX XXX-XX-XX*" required class="custom-input">
+                <div class="fieldset__input-wrapper" title="phone">
+                  <input type="tel" id="phone" name="phone" placeholder="+7 XXX XXX-XX-XX*" required class="custom-input">
+                  <svg viewBox="0 0 24.829 24.333" width="24.829px" height="24.333px">
+                    <use xlink:href="img/symbols.svg#icon-phone" />
+                  </svg>
+                </div>
               </div>
             </div>
           </fieldset>
@@ -145,7 +150,12 @@
               <legend>E-mail</legend>
               <div class="fieldset__inputs">
                 <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Ваш Email*" required class="custom-input">
+                <div class="fieldset__input-wrapper" title="phone">
+                  <input type="email" id="email" name="email" placeholder="Ваш Email*" required class="custom-input">
+                  <svg viewBox="0 0 32 32" width="32px" height="32px">
+                    <use xlink:href="img/symbols.svg#icon-mail" />
+                  </svg>
+                </div>
               </div>
             </div>
           </fieldset>

@@ -95,7 +95,6 @@
 
 @media ($desktop-widths) {
   .reviews {
-    background-image: url('../img/review@2x.jpg');
     max-width: 1050px;
     margin: 0 auto;
     padding: 65px 0 80px;
@@ -130,5 +129,11 @@
   .reviews__content {
     width: 100%;
     margin: 0 0;
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .reviews {
+    background-image: url('../img/review@2x.jpg 2x');
   }
 }

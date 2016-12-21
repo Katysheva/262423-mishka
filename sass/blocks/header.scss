@@ -10,6 +10,9 @@
 
 .header__logo {
   padding: 22px 0;
+  // display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .header__logo-img {
@@ -36,8 +39,8 @@
   background-color: #fff;
   border: 0;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  transform: translateY(30px);
   right: 30px;
   width: 22px;
   height: 17px;

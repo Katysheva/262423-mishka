@@ -1,13 +1,32 @@
 .top-nav {
   display: none;
+  &--no-js {
+    display: block;
+  }
+  &--show {
+    display: block;
+  }
 }
 
 .top-nav__item {
   @include block-padding(35px, 35px);
   font-family: $opensans-bold;
+  border-top: 1px solid  #ececec;;
+}
+
+.top-nav__left {
+  .top-nav__item {
+    padding: 35px 80px;
+  }
+}
+.top-nav__right {
+  .top-nav__link {
+    svg {
+      padding-right: 40px;
+    }
+  }
 }
 .top-nav__link {
-  // @include block-padding(35px, 35px);
   fill: rgba(#000, 0.2);
   &:hover, &:focus {
     cursor: pointer;
@@ -37,6 +56,7 @@
 
   .top-nav__item {
     border-left: 1px solid  #ececec;
+    border-top: 0;
     padding: 35px 0;
   }
   .top-nav__link {
@@ -58,6 +78,11 @@
   .top-nav__right {
     .top-nav__item:nth-of-type(2) {
       .top-nav__link {
+        padding-right: 0;
+      }
+    }
+    .top-nav__link {
+      svg {
         padding-right: 0;
       }
     }

@@ -20,7 +20,7 @@
 }
 input[type="checkbox"]{
   &:checked + .custom-checkbox:before {
-    background-image: url('../img/icon-tick.svg');
+    background-image: url('../img/icons/icon-tick.svg');
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 70%;

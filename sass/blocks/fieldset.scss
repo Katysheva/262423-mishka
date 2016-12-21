@@ -23,6 +23,25 @@
   }
 }
 
+.fieldset__input-wrapper {
+  position: relative;
+
+  svg {
+    position: absolute;
+    bottom: 14px;
+    right: 0;
+    fill: rgba(#000, 0.2);
+  }
+
+  input {
+    &:focus {
+      ~ svg {
+        fill: $accent-color;
+      }
+    }
+  }
+}
+
 @media ($tablet-widths) {
   .fieldset {
     padding: 50px;
@@ -50,7 +69,12 @@
       flex-wrap: wrap;
     }
   }
-
+  .fieldset__input-wrapper {
+    svg {
+      bottom: 18px;
+      right: 16px;
+    }
+  }
   .fieldset__input-group {
     display: flex;
     margin-top: 15px;
