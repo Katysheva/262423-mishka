@@ -6,6 +6,7 @@
   .sub-top-nav {
     display: block;
     position: absolute;
+    z-index: 5;
   }
   .sub-top-nav__list {
     display: flex;
