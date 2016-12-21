@@ -29,7 +29,7 @@ gulp.task("style", function() {
   .pipe(gulp.dest("css"))
   .pipe(minify())
   .pipe(rename("style.min.css"))
-  .pipe(gulp.dest("css"))
+  .pipe(gulp.dest("build/css"))
 
   .pipe(server.stream());
 });
@@ -79,9 +79,9 @@ gulp.task("copy", function() {
 });
 
 
-gulp.task("build", function(fn) {
-  run("clean", "copy", "style", "images", "symbols", fn);
-});
+gulp.task("build",
+  ["clean", "copy", "style", "images", "symbols"]
+);
 
 var del = require("del");
 gulp.task("clean", function() {
