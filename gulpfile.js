@@ -61,22 +61,22 @@ gulp.task("serve", ["style"], function() {
 gulp.task("images", function() {
   return gulp.src("img/**/*.{png,jpg,gif}")
   .pipe(imagemin([
-   imagemin.optipng({optimizationLevel: 3}),
-   imagemin.jpegtran({progressive: true})
-   ]))
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.jpegtran({progressive: true})
+    ]))
   .pipe(gulp.dest("img"));
 });
 
 gulp.task("copy", function() {
- return gulp.src([
-   "fonts/**/*.{woff,woff2}",
-   "img/**",
-   "js/**",
-   "*.html"
-   ], {
-     base: "."
-   })
- .pipe(gulp.dest("build"));
+  return gulp.src([
+    "fonts/**/*.{woff,woff2}",
+    "img/**",
+    "js/**",
+    "*.html"
+    ], {
+      base: "."
+    })
+  .pipe(gulp.dest("build"));
 });
 
 gulp.task('build', function(cb) {
