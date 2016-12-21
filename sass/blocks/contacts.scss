@@ -69,7 +69,7 @@
   }
 
   .contacts__text-content {
-    padding: 60px 50px;
+    padding: 80px 50px;
     position: relative;
 
     h3 {
@@ -80,7 +80,7 @@
       &:after {
         content: '';
         display: block;
-        background-image: url('../img/icon-flag.svg');
+        background-image: url('../img/icons/icon-flag.svg');
         background-repeat: no-repeat;
         position: absolute;
         top: 50px;

@@ -9,6 +9,20 @@
   display: none;
 }
 
+.footer__logo-link {
+  &:hover, &:focus {
+    cursor: pointer;
+    svg {
+      fill: $accent-color;
+    }
+  }
+  &:active {
+    svg {
+      fill: rgba($accent-color, 0.3);
+    }
+  }
+}
+
 @media ($tablet-widths) {
   .footer__wrapper {
     display: flex;

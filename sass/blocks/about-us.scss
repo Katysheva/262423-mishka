@@ -19,11 +19,12 @@
 .about-us__img {
   display: block;
   margin-bottom: 15px;
+  fill: #62d1ba
 }
 
 @media ($tablet-widths) {
   .about-us {
-    padding: 60px 50px 30px;
+    padding: 70px 50px 30px;
     h2 {
       margin-bottom: 50px;
     }
@@ -65,7 +66,7 @@
 }
 @media ($desktop-widths) {
   .about-us {
-    padding-top: 75px;
+    padding-top: 80px;
     padding-bottom: 30px;
     .main-content__wrapper {
       padding-right: 16%;
@@ -75,10 +76,6 @@
     }
   }
   .about-us__item {
-    // flex-basis: 50%;
     padding-bottom: 60px;
   }
-  // .about-us__img {
-  //   margin-bottom: 10px;
-  // }
 }
