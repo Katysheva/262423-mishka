@@ -16,6 +16,7 @@
   .main-content__header {
     &--main-page {
       background-image: url("../img/hero-mobile@2x.jpg 2x");
+      background-size: 1150px auto;
     }
   }
 }
@@ -67,6 +68,7 @@
   .main-content__header {
     &--main-page {
       background-image: url('../img/hero-desktop@2x.jpg');
+      background-size: 2300px auto;
     }
   }
 }
