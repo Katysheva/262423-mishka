@@ -95,12 +95,14 @@
   }
   .product-card__img {
     overflow: hidden;
+    width: 50%;
     img {
       min-height: 335px;
     }
   }
   .product-card__info {
     padding: 25px;
+    width: 50%;
   }
   .product-card__title {
     font-size: 20px;
@@ -127,6 +129,8 @@
   .product-card__img {
     display: block;
     min-height: 462px;
+    width: auto;
+    // flex: 1;
     img {
       width: auto;
       min-height: 462px;
@@ -135,6 +139,8 @@
   }
   .product-card__info {
     height: 100%;
+    width: auto;
+    // flex: 1;
   }
 
   .product-card__title {
