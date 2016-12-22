@@ -1,7 +1,11 @@
 .top-nav {
   display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
   &--no-js {
     display: block;
+    position: relative;
   }
   &--show {
     display: block;
@@ -45,6 +49,7 @@
 
   .top-nav {
     display: block;
+    position: relative;
   }
   .top-nav__list {
     display: flex;
