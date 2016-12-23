@@ -9,11 +9,6 @@ body{
 
 }
 
-// .temp-container {
-//   max-width: 320px;
-//   margin: 0 auto;
-// }
-
 h1,
 h2,
 h3,
@@ -86,4 +81,8 @@ input {
   &:focus {
     outline: none;
   }
+}
+
+.svg-sprite {
+  display: none;
 }
