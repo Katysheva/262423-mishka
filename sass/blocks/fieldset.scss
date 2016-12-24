@@ -1,28 +1,39 @@
 .fieldset {
   border: 0;
-  // border-top: 1px solid $accent-color;
   padding: 0 0 25px;
 }
 
 .fieldset__content {
   position: relative;
-  legend {
-    display: block;
-    background-color: #fff;
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 11px;
-      right: 0;
-      width: 100%;
-      height: 1px;
-      background-color: $accent-color;
-      z-index: -2;
-    }
-  }
 }
 
+.fieldset__legend {
+  display: block;
+  color: $accent-color;
+  font-size: 17px;
+  font-family: $opensans-bold;
+  text-transform: uppercase;
+  padding-left: 0;
+
+  span {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding-right: 20px;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $accent-color;
+    z-index: 1;
+  }
+}
 .fieldset__input-wrapper {
   position: relative;
 
@@ -50,14 +61,16 @@
 
   .fieldset__content {
     display: flex;
+  }
 
-    legend {
-      flex-basis: 25%;
-      padding-top: 20px;
+  .fieldset__legend {
+    flex-basis: 25%;
+    padding-top: 20px;
+    span {
       background-color: transparent;
-      &:after {
-        display: none;
-      }
+    }
+    &:after {
+      display: none;
     }
   }
 
@@ -93,11 +106,12 @@
     padding: 50px 0;
   }
   .fieldset__content {
-    legend {
-      text-align: center;
-      flex-basis: 17.5%;
-      padding-top: 15px;
-    }
+  }
+
+  .fieldset__legend {
+    text-align: center;
+    flex-basis: 17.5%;
+    padding-top: 15px;
   }
 
   .fieldset__inputs {

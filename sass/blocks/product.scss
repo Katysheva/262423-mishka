@@ -14,9 +14,6 @@
       text-transform: uppercase;
       font-size: 17px;
       line-height: 16px;
-      br {
-        display: none;
-      }
     }
   }
 }
@@ -113,9 +110,7 @@
         text-align: center;
         padding-right: 27px;
         padding-top: 13px;
-        br {
-          display: inline-block;
-        }
+        max-width: 135px;
       }
     }
   }
@@ -134,7 +129,7 @@
     h4 {
       position: absolute;
       top: 13%;
-      left: -13%;
+      left: -16%;
     }
   }
   .product__about {

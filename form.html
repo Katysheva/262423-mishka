@@ -82,7 +82,7 @@
       <form action="/echo">
         <fieldset class="fieldset">
           <div class="fieldset__content">
-            <legend>Тип</legend>
+            <div class="fieldset__legend"><span>Тип</span></div>
             <div class="fieldset__inputs">
               <input type="radio" id="interior-acc" name="product-type">
               <label for="interior-acc" class="custom-radio"><span>Аксессуар для интерьера</span></label>
@@ -94,7 +94,7 @@
         <div class="colored-section">
           <fieldset class="fieldset">
             <div class="fieldset__content">
-              <legend>Цвет</legend>
+              <div class="fieldset__legend"><span>Цвет</span></div>
               <div class="fieldset__inputs fieldset__inputs--colors">
                 <input type="checkbox" id="color-white" name="product-color">
                 <label class="custom-checkbox" for="color-white"><span>Белый</span></label>
@@ -114,7 +114,7 @@
         </div>
         <fieldset class="fieldset">
           <div class="fieldset__content">
-            <legend class="personal-info">ФИО</legend>
+            <div class="personal-info fieldset__legend"><span>ФИО</span></div>
             <div class="fieldset__inputs">
               <div class="fieldset__input-group">
                 <label for="person-name" class="personal-info__label">Имя:</label>
@@ -136,11 +136,11 @@
         <div class="colored-section">
           <fieldset class="fieldset colored-section__fieldset">
             <div class="fieldset__content">
-              <legend>Тел</legend>
+              <div class="fieldset__legend"><span>Тел</span></div>
               <div class="fieldset__inputs">
                 <label for="phone">Телефон</label>
                 <div class="fieldset__input-wrapper" title="phone">
-                  <input type="tel" id="phone" name="phone" placeholder="+7 XXX XXX-XX-XX*" required class="custom-input">
+                  <input type="text" id="phone" name="phone" placeholder="+7 XXX XXX-XX-XX*" required class="custom-input">
                   <svg viewBox="0 0 24.829 24.333" width="24.829px" height="24.333px">
                     <use xlink:href="#icon-phone" />
                   </svg>
@@ -150,7 +150,7 @@
           </fieldset>
           <fieldset class="fieldset colored-section__fieldset">
             <div class="fieldset__content">
-              <legend>E-mail</legend>
+              <div class="fieldset__legend"><span>E-mail</span></div>
               <div class="fieldset__inputs">
                 <label for="email">E-mail</label>
                 <div class="fieldset__input-wrapper" title="phone">
@@ -167,7 +167,7 @@
 
         <fieldset class="fieldset">
           <div class="fieldset__content">
-            <legend>Доп</legend>
+            <div class="fieldset__legend"><span>Доп</span></div>
             <div class="fieldset__inputs">
               <label for="add-info">Дополнительно</label>
               <textarea id="add-info" name="add-info" placeholder="Опишите все ваши пожелания к заказу" class="custom-input custom-input--textarea"></textarea>

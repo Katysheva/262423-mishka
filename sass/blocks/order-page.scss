@@ -1,15 +1,6 @@
 .order-page {
   @include block-padding(15px);
 
-  legend {
-    color: $accent-color;
-    font-size: 17px;
-    font-family: $opensans-bold;
-    text-transform: uppercase;
-    padding-right: 20px;
-    padding-left: 0;
-  }
-
   label {
     font-size: 17px;
     font-family: $opensans-bold;

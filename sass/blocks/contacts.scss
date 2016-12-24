@@ -24,6 +24,7 @@
     border-bottom: 1px solid $accent-color;
     margin-left: 20px;
     display: inline-block;
+    vertical-align: baseline;
 
     &:hover, &:focus {
       color: $accent-color;
